@@ -49,10 +49,12 @@ main::after {
   background-size: 326px 326px;
 
   font: 0/0 a;
-
-  -webkit-animation: rotate 2.6s infinite;
-  -webkit-animation-timing-function: linear;
 }
+
+  .timer.progress {
+    transform: rotate(360deg);
+    transition: transform 2600ms linear;
+  }
 
 h1 {
   height: 40px;
@@ -70,24 +72,17 @@ button {
 
   background-color: transparent;
   border: 1px solid rgb(74, 25, 21);
-  border-radius: 21px;
+  border-radius: 10px;
   color: rgb(74, 25, 21);
   cursor: pointer;
   outline: none;
 
   font-family: 'Times New Roman', serif;
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 20px;
   line-height: 70px;
 }
 
 button:active {
   background-color: rgb(132, 88, 51);
   color: white;
-}
-
-@-webkit-keyframes rotate {
-  0%   { transform: rotate(0deg); }
-  50%  { transform: rotate(180deg); }
-  100% { transform: rotate(360deg); }
 }
