@@ -42,18 +42,34 @@ main::after {
 }
 
 .timer {
+  box-sizing: border-box;
   height: 326px;
   width: 326px;
+  padding: 141px 74px 0;
 
-  background-image: url('img/arrow.png');
+  background-image: url('img/timer.png');
   background-size: 326px 326px;
 
   font: 0/0 a;
 }
 
   .timer.progress {
-    transform: rotate(360deg);
-    transition: transform 2600ms linear;
+    /*transform: rotate(360deg);*/
+    /*transition: transform 2600ms linear;*/
+  }
+
+.timer .ticks {
+  height: 51px;
+  width: 178px;
+
+  background-image: url('img/ticks.png');
+  background-position-x: -89px;
+  background-size: 356px 51px;
+}
+
+  .timer.progress .ticks {
+    background-position-x: 267px;
+    transition: background-position 2600ms linear;
   }
 
 h1 {
