@@ -8,6 +8,9 @@ body {
   display: flex;
   display: -webkit-flex;
   margin: 0;
+
+  background-color: rgb(26, 26, 26);
+  background-image: url('img/background.png');
 }
 
 /* Card */
@@ -27,6 +30,7 @@ main {
   padding: 15px 10px 90px;
 
   background-color: rgb(247, 199, 139);
+  background-image: url('img/background-card.png');
   border-radius: 42px;
 }
 
@@ -43,6 +47,7 @@ main::after {
 
   background-color: rgb(74, 25, 21);
   border-radius: 42px;
+  box-shadow: 0 0 40px black;
 }
 
 .timer {
@@ -87,15 +92,18 @@ button {
   height: 70px;
 
   background-color: transparent;
-  border: 1px solid rgb(74, 25, 21);
-  border-radius: 10px;
+  background-image: url('img/button.png');
+  background-size: 326px 70px;
+  border-width: 0;
   color: rgb(74, 25, 21);
   cursor: pointer;
   outline: none;
 
   font-family: 'Times New Roman', serif;
-  font-size: 20px;
+  font-size: 22px;
+  font-weight: bold;
   line-height: 70px;
+  text-transform: uppercase;
 }
 
 button:active {
